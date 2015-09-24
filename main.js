@@ -57,7 +57,7 @@ cc.game.onStart = function() {
 	cc.view.resizeWithBrowserSize(true);
 	cc.director.setDisplayStats(true);
 	//load resources
-	cc.MyLoading.preload(g_resources, function() {
+	cc.LoaderScene.preload(g_resources, function() {
 		cc.director.runScene(new HelloWorldScene());
 	}, this);
 };
